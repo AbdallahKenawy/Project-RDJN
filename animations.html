@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+  <title>Rio De Ja'Noether</title>
+</head>
+
+<body>
+  <div id="shadow" class="overlay" onclick="closeNav()"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Accueil</a>
+    <a href="poles.html">Pôles</a>
+    <a href="animations.html">Animations</a>
+    <a href="evenements.html">Événements</a>
+    <a href="partenaires.html">Partenaires</a>
+    <a href="https://riodejanoether.forumactif.com/">Forum</a>
+  </div>
+    
+    <div class="header">
+      <div class="burger-menu" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="nomliste" onclick="navigateToMainPage()">RIO DE JA'NOETHER</div>
+    </div>
+
+    <div class="accroche">
+        <h1>Samba ?</h1>
+        <p>Tu veux savoir plus sur notre chorée et nos chansons? T'est dans le bon endroit. Insassien.ne tu ne fermeras jamais cette page sans faire la sacrée samba</p>
+    </div>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'FilRose')">Fil Rose</button>
+      <button class="tablinks" onclick="openTab(event, 'Defis')">Défis</button>
+      <button class="tablinks" onclick="openTab(event, 'Chansons')">Chansons</button>
+      <button class="tablinks" onclick="openTab(event, 'Choree')">Chorée</button>
+      <button class="tablinks" onclick="openTab(event, 'Videos')">Vidéos</button>
+    </div>
+    
+    <div id="FilRose" class="tabcontent" style="display: flex;">
+        <div id="history">
+      <h1>Samba?</h1>
+      <p>Il était une fois, dans un royaume lointain, un Roi passionné par les festivités et les carnavals. Animé par le désir de trouver le carnaval ultime, le plus joyeux et vibrant, il décida de s'embarquer dans un voyage extraordinaire à travers le monde.<br> 
+        <br>
+        Son périple l'avait conduit à travers le monde, des ruelles enjouées de Venise aux avenues animées de la Nouvelle-Orléans. Cependant, c'est à Rio de Janeiro, au cœur du pays de la samba, que son aventure prit une tournure des plus extraordinaires.<br>  
+        <br>
+         
+        
+        Lorsque le Roi posa les pieds dans les rues bondées de Rio, il fut enveloppé par l'énergie palpitante du carnaval. Les RJNT, guides de cette quête, savaient que leur mission était cruciale. Convaincre le Roi que le meilleur carnaval résidait ici, dans ce havre de couleurs et de rythmes.<br>  
+        <br>
+         
+        
+        Les RJNT se lancèrent dans une campagne intense pour séduire le Roi, l'invitant à plonger au cœur de l'effervescence brésilienne. Avec l’aide de tous les élèves de l’insa, l'école toute entiere se transforma en un spectacle éblouissant de costumes flamboyants et de danses envoûtantes, tandis que la musique endiablée emplissait l'air.<br>   
+        <br>
+        Le Roi fut emporté par cette tornade de joie et de fetes.<br>  
+        <br>
+         
+        
+        Pourtant, la mission des RJNT était loin d'être terminée. Ils savaient que pour retenir le Roi et le couronner souverain du pays de la samba, ils devaient prouver leur capacité à respecter trois valeurs sacrées.<br>
+      </p>
+    </div>
+      </div>
+    <div id="Defis" class="tabcontent" style="display:none;">
+      <div id="history">
+        <h1>Lots à gagner</h1>
+        <p>
+            Tente de remporter un max de points pour gagner des lots magnifiques !
+            <ul>
+              <li>
+                <h3>Macbook Air</h3>
+                <p></p>
+              </li>
+              <li>
+                <h3>Airpods Pro</h3>
+                <p></p>
+              </li>
+              <li>
+                <h3>Switch Lite</h3>
+                <p></p>
+              </li>
+              <li>
+                <h3>Iphone X</h3>
+                <p></p>
+              </li>
+            </ul>
+            Et encore! D'autres lots sont réservés aux meilleurs Swinguers de l'INSA<br>
+            Téléchargez notre application pour valider vos Défis. Vous la trouverez en bas de ce page.
+        </p>
+
+        <button type="button" class="collapsible">25 pts</button>
+        <div class="content">          
+        </div>
+        <button type="button" class="collapsible">50 pts</button>
+        <div class="content">
+        </div>
+        <button type="button" class="collapsible">100 pts</button>
+        <div class="content">
+        </div>
+        <button type="button" class="collapsible">300 pts</button>
+        <div class="content">
+        </div>
+      </div>
+    </div>
+    <div id="Chansons" class="tabcontent" style="display: none;">
+      <div class="chanson">
+        <div class="chansonheader">
+          <h2>CHANT DU BRESIL</h2> 
+        </div>
+        <p>
+          L’INSA c’est le Brésil  <br>
+
+          Noether c’est la samba  <br>
+          
+          Le roi du carnaval  <br>
+          
+          L’INSA il choisira  <br>
+          
+          L’INSAAA C’EST LE BRESIL  <br>
+          
+          NOETHER C’EST LA SAMBA  <br>
+          
+          ILS VONT S’JETER DANS L’ILL <br>
+          
+          SI LES ROSES NE GAGNENT PAS (SAMBA) <br>       
+        </p>
+      </div>
+      <div class="chanson">
+        <div class="chansonheader">
+          <h2>Ce soir en ville ya de la grosse schnouffe </h2>
+          <audio controls>
+            <source src="chansons/cesoirenville.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>    
+        </div>
+        <p>
+          RJNT c’est de la frappe  <br>
+
+          Tellement chokbar tu finis à 4 pattes <br> 
+          
+          Monte avec le roi et vote pour moi  <br>
+          
+          Encore un soir où j’fais la fiesta !  <br>            
+        </p>
+      </div>
+      <div class="chanson">
+        <div class="chansonheader">
+          <h2>Daddy Chocolat</h2>
+          <audio controls>
+            <source src="chansons/daddychocolat.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>          
+        </div>
+        <div class="collapsible-content">
+        <p>
+      Va au Brésil pendant qu’les aliens sont pas là<br>
+      Couleur est rose ils voteront pas vert c’est pas grave<br>
+      RJNT t’fait vivre une campagne de malade<br>
+      Tu veux la fête suis-nous à Copacabana<br>
+      <br>
+      J’aime bien danser, j’aime bien swinguer<br>
+      Tema l’équipe (667) tema l´Brésil<br>
+      RJNT j’crois qu’t’es pas prêt<br>
+      RJNT j’crois qu’t´es pas prêt<br>
+      Le jaguar c’est notre symbole<br>
+      Fais gaffe il va bondir<br>
+      Il va bondir<br>
+      Il y a des danseurs et des danseuses<br>
+      On vous ramène l’roi du Brésil<br>
+      A l’INSA (on boit) c’est la folie<br>
+      T’as du rose c’est que tu peux slay<br>
+      Ou le faire, Animaslay<br>
+      Vas-y fais ce que t’as à faire<br>
+      Fais ce que t’as à faire<br>
+      Pense à nous au vote (pause) et garde les pieds sur terre<br>
+      Askiparait on va gagner,<br>
+      Putain, des fois j’oublie de swinguer,<br>
+      Mais j’men souviens vite<br>
+      Quand l’INSA fait la chorée<br>
+      RJ, NT<br>
+      Des fois j’oublie de swinguer<br>
+      Mais j’men souviens vite<br>
+      Quand l’INSA fait la chorée<br>
+      <br>
+      Le Brésil c’est tellement fort<br>
+      Regarde l’INSA c’est l´carnaval<br>
+      On va swinguer des heures<br>
+      Avec l’ambiance des roses<br>
+      J’sais même plus où donner de la tête<br>
+      Tema la pose<br>
+      Tous les roses sont là pour danser la chorée<br>
+      (Hey Hey Hey)<br>
+      <br>
+      Va au Brésil pendant qu’les aliens sont pas là<br>
+      Couleur est rose ils voteront pas vert c’est pas grave<br>
+      RJNT t’fait vivre une campagne de malade<br>
+      Tu veux la fête suis-nous à Copacabana</p>    
+        </p>
+      </div>
+      </div>
+      <div class="chanson">
+        <div class="chansonheader">
+          <h2>J’aimerais trop qu’elle m’aime</h2>
+          <audio controls>
+            <source src="chansons/jaimeraistrop.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>    
+        </div>
+        <p>
+          Allez viens avec nous danser toute la nuit<br>
+          Oui viens aveceuh nou-ous, ce soir c’est la folie<br>
+          Allez viens avec nous danser toute la nuit<br>
+          Oui viens aveceuh nou-ous, ce soir c’est la folie<br>
+          <br>
+          J’adore l’Brésil, Chariot elle est trop belle<br>
+          Elle fait partie de la famille<br>
+          Un groupe qui interpelle<br>
+          Avec un peu de samba<br>
+          Mon cœur se remplit de joie<br>
+          Viens avec les roses<br>
+          Tu deviendras toute chose<br>
+          <br>
+          Moi perso j’veux danser avec Rasmoo-o-o<br>
+          Ou passer la soirée avec Dino-o-o<br>
+          Ne pas m’faire virer de boîte comme Joggo-o-o-o<br>
+          Quand j’vous vois tous à l’INSA, qu’est-ce que je suis content d’être là !<br>
+          Eh oh oh la Ta gueule Anaëlle<br>
+          Comment tu parles à ma liste<br>
+          <br>
+          Allez viens avec nous danser toute la nuit<br>
+          Oui viens aveceuh nou-ous, ce soir c’est la folie<br>
+          Allez viens avec nous danser toute la nuit<br>
+          Oui viens aveceuh nou-ous, ce soir c’est la folie<br>
+          <br>
+          Et pour les roses ouais ouais x3<br>
+          Et l’carnaval<br>
+          Et pour les roses ouais ouais x3<br>
+          Et l’carnaval<br>
+          <br>
+          On déguste on profite avec Lindt<br>
+          Pas de problème à part pour Rocco fuite<br>
+          Toujours ensemble comme Tac et puis Tic<br>
+          J’oublierai jamais de crier Mecanik<br>
+          Oh mon dieu qu’il est drôle Scoubabou<br>
+          Mais jamais autant que la Dahak<br>
+          Mes yeux brillent devant le corps de The Rock<br>
+          On est peut-être qu’une simple liste<br>
+          Mais bien plus qu’une vraie famille<br>
+          <br>
+          Allez viens avec nous danser toute la nuit<br>
+          Oui viens aveceuh nou-ous, ce soir c’est la folie<br>
+          Allez viens avec nous danser toute la nuit<br>
+          Oui viens aveceuh nou-ous, ce soir c’est la folie<br>
+                
+        </p>
+      </div>
+      <div class="chanson">
+        <div class="chansonheader">
+          <h2>Ma Liste</h2>
+          <audio controls>
+            <source src="chansons/maliste.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>  
+        </div>
+        <p>
+          Moi j'aime toute ma liste<br>
+          Les RJNT<br>
+          Ma liste<br>
+          <br>
+          Qu'est ce que t'en penses ?<br>
+          Qu'est ce que ça t’fait ?<br>
+          De voir l'INSA tout heureuse toute en rose avec RJNT<br>
+          Quel régal<br>
+          Vive le carnaval<br>
+          On a tapé dans l´mille<br>
+          On entend tout l´monde dire<br>
+          L'INSA c'est l’Brésil<br>
+          Ils veulent plus dormir<br>
+          S'ils s'imaginent avec les aliens, demain sera trop nul<br>
+          J'essaye d'être le plus calme et serein possible<br>
+          Mais j'ai qu'une envie<br>
+          C'est d’tous ensemble détruire E.T<br>
+          <br>
+          Moi j'aime toute ma liste<br>
+          Ma liste<br>
+          Moi j'aime toute ma liste<br>
+          Ma liste<br>
+          Les RJNT<br>
+          Ma liste<br>
+          Ma liste Oh no ma liste<br>
+          Ma liste<br>
+          Moi j'aime toute ma liste<br>
+          Ma liste<br>
+          Les RJNT<br>
+          Ma liste<br>
+          Ma liste Oh no ma liste<br>
+          Ma liste<br>
+          <br>
+          Nous on sait faire la fête<br>
+          Les RJNT on n’est pas des pouetchs<br>
+          Mais moi j’voudrais surtout vous voir sourire prendre du plaisir et vous rendre compte à quel point j’vous aime<br>
+          <br>
+          Est c’qu’ils font mieux que nous ?<br>
+          Qu'est c’qu’ils ont qu'on n’a pas ?<br>
+          Absolument rien<br>
+          J'essaye d'être le plus calme et serein possible<br>
+          Mais j'ai qu'une envie<br>
+          C'est d’tous ensemble détruire E.T<br>
+          <br>
+          Moi j'aime toute ma liste<br>
+          Ma liste<br>
+          Moi j'aime toute ma liste<br>
+          Ma liste<br>
+          Les RJNT<br>
+          Ma liste<br>
+          Ma liste Oh no ma liste<br>
+          Ma liste<br>
+          Moi j'aime toute ma liste<br>
+          Ma liste<br>
+          Les RJNT<br>
+          Ma liste Oh no ma liste<br>
+          Ma liste<br>          
+        </p>
+      </div>
+      <div class="chanson">
+        <div class="chansonheader">
+          <h2>Au bal masqué</h2>
+          <audio controls>
+            <source src="chansons/balmasque.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>  
+        </div>
+        <p>
+          Samba ! Ça va swinger ohé ohé<br>
+          On danse on danse on danse à Ja’Noether (?)<br>
+          On est à Rio on kiffe danser ohéohé<br>
+          Nous On swinge On swinge On swinge On swinge On swinge<br>
+          <br>
+          Pendant toute l’année, on prépare la campagne<br>
+          Amblance, Poulet dentsans<br>
+          C’est un vrai plaisir, d’accueillir les insassiens<br>
+          Aflaflou, amarretot<br>
+          Aujourd’hui tu es avec les roses les roses<br>
+          Devinez devinez devinez qui je suis<br>
+          Avec mon masque, je regarde les aliens, les verts<br>
+          Aujourd’hui c’est le carnaval,<br>
+          Aujourd’hui c’est le carnaval<br>
+          <br>
+          Samba ! Ça va swinger ohé ohé<br>
+          On danse on danse on danse à Ja’Noether (?)<br>
+          On est à Rio on kiffe danser ohéohé<br>
+          Nous On swinge On swinge On swinge On swinge On swinge<br>
+          <br>
+          On est tous réunis pendant deux semaine de foolie<br>
+          Caramel, 404<br>
+          On va tous chanter jusqu’au bout de la nuit<br>
+          Scoubabou, PDG<br>
+          <br>
+          Aujourd’hui tu es avec les roses les roses<br>
+          Devinez devinez devinez qui va gagner<br>
+          Avec mon masque, je regarde les aliens, les verts<br>
+          Aujourd’hui c’est le carnaval,<br>
+          Aujourd’hui c’est le carnaval<br>
+          <br>
+          Samba ! Ça va swinger ohé ohé<br>
+          On danse on danse on danse à Ja’Noether (?)<br>
+          On est à Rio on kiffe danser ohéohé<br>
+          Nous On swinge On swinge On swinge On swinge On swinge
+                   
+        </p>
+      </div>
+      <div class="chanson"> 
+        <div class="chansonheader">
+          <h2>TU ES ROSE</h2>
+          <audio controls>
+            <source src="chansons/tuesfou.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>  
+        </div>
+        <p>
+          RJNT<br>
+          CA VA SWINGER<br>
+          T’ES QUOICOUBAKA<br>
+          Oublie les maths et la physique<br>
+          Ce soir c’est le Brésil<br>
+          Même si les verts nous lancent des piques<br>
+          Il est temps pour nous de briller<br>
+          Alors ce soir on va danser pour fêter<br>
+          Le carnaval<br>
+          Qu’est-ce que tu attends viens on va chanter<br>
+          C’est parti pour SWINGER<br>
+          On est rose<br>
+          Avec vous on y fout<br>
+          On va tout péter avec RJNT<br>
+          Ohohoohohohohohohohoo<br>
+          <br>
+          On est rose<br>
+          Avec vous on y fout<br>
+          On va tout péter avec RJNT<br>
+          Ohohoohohohohohohohoo<br>
+          <br>
+          On sait qu’on va y arriver<br>
+          Lève-toi et viens aux soirées<br>
+          Qui c’est qui peut nous arrêter<br>
+          On a l’INSA à nos côtés.<br>
+          Alors ce soir on va danser pour fêter<br>
+          Le carnaval<br>
+          Qu’est-ce que tu attends viens on va chanter<br>
+          <br>
+          C’est parti pour SWINGER<br>
+          On est rose<br>
+          Avec vous on y fout<br>
+          On va tout péter avec RJNT<br>
+          <br>
+          Ohohoohohohohohohohoo<br>
+          On est rose<br>
+          Avec vous on y fout<br>
+          On va tout péter avec RJNT<br>
+          Ohohoohohohohohohohoo
+                  
+        </p>
+      </div>
+      <div class="chanson">
+        <div class="chansonheader">
+            <h2>Encore besoin de swinguer ?</h2>
+        </div>
+      <iframe src="https://open.spotify.com/embed/playlist/0fA4IlKJmE0TpgAnOBL8Rh?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    </div>
+    <div id="Choree" class="tabcontent" style="display: none;">
+      <div class="label responsive-iframe-container">
+        <iframe class="responsive-iframe" src="https://firebasestorage.googleapis.com/v0/b/applibde-ac4c2.appspot.com/o/choree%2Fchoree.mp4?alt=media&token=f2d3da52-7ea7-41d5-be39-daae685592d1" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="Videos" class="tabcontent" style="display:none;">
+      <h1>Samenala Samba</h1>
+      <div class="label responsive-iframe-container">   
+        <iframe class="responsive-iframe" src="https://firebasestorage.googleapis.com/v0/b/applibde-ac4c2.appspot.com/o/choree%2FSoireeSoft1.mp4?alt=media&token=c0bac2fd-8b91-4898-af95-bbb0e99d7a8f" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="sites">
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61556312734951" target="_blank" title="Facebook">
+            <i class="lab la-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/riodejanoether?igsh=MXV2eTdtY25tOG5mMQ%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+            <i class="lab la-instagram"></i>
+        </a>
+        <a href="https://apps.apple.com/us/app/rjnt/id6477356580" target="_blank" title="Application IOS">
+            <i class="lab la-apple"></i>
+        </a>
+        <a href="assets/RJNT.apk" download="RJNT" title="Application Android">
+          <i class="lab la-android"></i>
+      </a>
+    </div>
+      <p>© 2024 Rio de Ja'noether</p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+
+</body>
+</html>

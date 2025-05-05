@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="appli.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+  <title>Notifications</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Logo BdE INSA">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="appli.html">Calendrier</a></li>
+                    <li><a href="news.html">Articles</a></li>
+                    <li><a href="notifs.html">Notifications</a></li>
+                    <li><a href="amicalisme.html">Amicalisme</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-border"></div>
+    </header>
+
+    <div class="form-container" id="tutorial">
+        <form id="eventForm">
+            <h2>Compte Google</h2>
+            <label for="email">Email : rdjn2024@gmail.com</label>
+            <label for="password">Mot de passe : Couchelesverts40</label>
+            <div class="link-separator">
+                <label for="link">Lien :</label>
+            <a href="https://console.firebase.google.com/u/2/project/applibde-ac4c2/messaging">https://console.firebase.google.com/u/2/project/applibde-ac4c2/messaging</a>
+            </div>
+            <label for="tutorial">Tutoriel :</label>
+            <textarea id="tutorial" name="tutorial" placeholder="Instructions pour la gestion des notifications..." rows="8" readonly>
+1. Cliquez sur "Messaging" dans la barre de navigation à gauche.
+2. Cliquez sur les trois points à droite d'une notification existante et sélectionnez "Dupliquer".
+3. Changez le titre (title) et la description (text).
+4. Cliquez sur "Scheduling" et choisissez l'heure de la notification (NB: il peut y avoir un retard de 2-3 minutes par rapport à l'heure choisie).
+5. Après avoir terminé, cliquez sur "Review" puis "Publish".
+            </textarea>
+        </form>
+    </div>
+
+</body>
+</html>

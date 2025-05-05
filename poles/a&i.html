@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <title>Rio De Ja'Noether</title>
+</head>
+
+<body>
+  <div id="shadow" class="overlay" onclick="closeNav()"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/index.html">Accueil</a>
+    <a href="/poles.html">Pôles</a>
+    <a href="/animations.html">Animations</a>
+    <a href="/evenements.html">Événements</a>
+    <a href="/partenaires.html">Partenaires</a>
+    <a href="https://riodejanoether.forumactif.com/">Forum</a>
+  </div>
+    
+    <div class="header">
+      <div class="burger-menu" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="nomliste" onclick="navigateToMainPage()">RIO DE JA'NOETHER</div>
+    </div>
+
+    <div class="accroche">
+        <h1>Pôle Arts & Industries</h1>
+        <img class='imagepole' src="/images/poles/a&i.png">
+        <p>Le Pôle Arts & Industries joue un rôle important au sein du Bureau des Élèves de l'INSA Strasbourg. 
+            Nous servons de pont entre les élèves et les diplômé·e·s. L'importance de maintenir des liens forts 
+            avec les ancien·ne·s apprenant·e·s est au cœur de notre mission. Ces relations ne se limitent pas à 
+            perpétuer les traditions de l'école ; elles sont essentielles pour le partage de connaissances, 
+            d'expériences et de conseils professionnels. En tissant un réseau solide entre les ancien·ne·s et les 
+            apprenant·e·s actuel·le·s, nous créons une communauté dynamique et soudée, une expérience 
+            enrichissante pour tou·te·s. Ce dialogue continu entre les générations est la clé de notre approche 
+            pour revitaliser et mettre en lumière les activités et les contributions du Pôle Arts & Industries. La 
+            décision de renommer le pôle en 'Arts & Industries' a été prise pour éliminer toute ambiguïté autour 
+            de son identité et de son domaine d'action. Ce changement de nom symbolise également notre 
+            engagement à raviver le pôle, le rendant plus accessible et reconnaissable au sein du BdE. En 
+            parallèle, l'augmentation du nombre et de la diversité des évènements organisés est un autre pilier 
+            de notre stratégie de redynamisation. </p>
+    </div>
+
+    <article class="polescontainer">
+        <div class="membre" id="respo">
+            <h2>Amaretôt</h2>
+            <img class='imagepole' src="/images/membres/emma.JPG">
+            <h3>Emma RENARD - GT2E3</h3>
+        </div>
+        <div class="membre">
+            <h2>Animaslayyy</h2>
+            <img class='imagepole' src="/images/membres/mateo.JPG">
+            <h3>Mateo CHEKROUN - GE3</h3>
+        </div>
+        
+    </article>
+
+    <div id="evenementspole">
+        <h2 class="label">Événements Phares</h2>
+        <ul>
+            <li>
+                <div class="child left">
+                    <h3>La Revanche des Régions [30 mars]</h3>
+                    <p>Tu as envie de prouver de quoi ta région est capable après la victoire de Nice Côte d’Azur à la Soirée 
+                        des Régions 2023 ? Viens prendre ta revanche lors de la Revanche des Régions. Au programme, un 
+                        grand jeu de piste dans Strasbourg qui se solde par un pique-nique convivial, le tout avec les ancien·ne·s 
+                        de ta région ! 
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="child right">
+                    <h3>Soirée des régions [11 septembre]</h3>
+                    <p>La Soirée des Régions est une soirée charnière du Pôle Arts & Industries. Dans la continuité de la 
+                        revanche des régions, cet évènement se déroule sous la forme de petits jeux autour des spécialités de 
+                        chaque région. L’équipe vainqueure est récompensée d’un lot puis la soirée se poursuit au bar de 
+                        l’Œuf.</p>
+                </div>
+            </li>
+            <li>
+                <div class="child left">
+                    <h3>Forum des métiers x Pôle Alternance [28 novembre]</h3>
+                    <p>Le  forum  des  métiers  est  un  passage  obligatoire  chaque  année,  autant  pour  les  apprenant·e·s  en 
+                        réflexion sur leur avenir que pour les entreprises en recherche de futur·e·s diplômé·e·s ! Le but est de 
+                        permettre aux apprenant·e·s de découvrir les différentes entreprises partenaires de l’INSA, mais aussi 
+                        de discuter avec des ancien·ne·s diplômé·e·s des perspectives dans différents métiers. Le principe suit 
+                        l’idée du BdE précédent, de s’allier au Pôle Alternance pour aussi permettre aux alternant·e·s de venir 
+                        présenter leurs activités dans leurs entreprises.</p>
+                </div>
+            </li>
+        </ul>
+        <h2 class="label">Et encore ! N'hésite pas à jeter un coup d'œil à nos programmes, Swinguer</h2>
+    </div>
+    
+
+    <div class="downloads">
+        <a href="/assets/Programme_RJNT_Concis_Censuré.pdf" download="Programme Concis RJNT 2024.pdf" class="download-button">Programme Concis</a>
+        <a href="/assets/Programme_RJNT_Détaillé_Censuré.pdf" download="Programme Détaillé RJNT 2024.pdf" class="download-button">Programme Détaillé</a>
+    </div>
+
+    <div class="footer">
+        <div class="sites">
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61556312734951" target="_blank" title="Facebook">
+              <i class="lab la-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/riodejanoether?igsh=MXV2eTdtY25tOG5mMQ%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+              <i class="lab la-instagram"></i>
+          </a>
+          <a href="https://apps.apple.com/us/app/rjnt/id6477356580" target="_blank" title="Application IOS">
+              <i class="lab la-apple"></i>
+          </a>
+          <a href="assets/RJNT.apk" download="RJNT" title="Application Android">
+            <i class="lab la-android"></i>
+        </a>
+      </div>
+        <p>© 2024 Rio de Ja'noether</p>
+      </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>

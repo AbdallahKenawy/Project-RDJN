@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+  <title>Rio De Ja'Noether</title>
+</head>
+
+<body>
+  <div id="shadow" class="overlay" onclick="closeNav()"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Accueil</a>
+    <a href="poles.html">Pôles</a>
+    <a href="animations.html">Animations</a>
+    <a href="evenements.html">Événements</a>
+    <a href="partenaires.html">Partenaires</a>
+    <a href="https://riodejanoether.forumactif.com/">Forum</a>
+  </div>
+    
+    <div class="header">
+      <div class="burger-menu" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="nomliste" onclick="navigateToMainPage()">RIO DE JA'NOETHER</div>
+    </div>
+
+    <div class="accroche">
+        <h1>Le Carnaval infini</h1>
+        <p>Il est temps! Le roi du carnaval a choisi l'INSA Strasbourg pour y foutre </p>
+    </div>
+
+    <div class="evenementscontainer">
+        <div class="calendarcontainer">
+            <div class="calendarheader">
+                <h2 id="calendar-title"></h2>
+                <div class="arrow-container">
+                  <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                  <span id="next" class="material-symbols-rounded">chevron_right</span>
+                </div>
+            </div>
+            <div id="calendar"></div>
+        </div>
+        <div id="content-15/02/2024" class="evenement">
+          <h1>Amphi + Bar d'ouverture de campagne !</h1>
+          <h2>Mais ? Tu listes ?</h2>
+          <p>L'INSA, C'EST LE BRÉSIL ; NOETHER, C'EST LA SAMBA !<br>
+            Viens rencontrer les 41 swingueurs qui sont là pour te faire kiffer les deux semaines de campagne.
+          </p>
+      </div>
+      <div id="content-20/02/2024" class="evenement" style="display: flex;">
+          <h1>Un premier défi</h1>
+          <p>Le Roi du Carnaval est à l'INSA, et les RJNT veulent le séduire. Mais pour cela, ils ont besoin que tu swingues. Pour cette première soirée de notre campagne, tu dois faire preuve de swing avec style, rivalisant d'originalité et de créativité.
+            <br><br>
+            Vous êtes tous conviés à vous mesurer en équipes et à tenter de devenir les meilleurs swingueurs de la soirée 🩷. De nombreuses surprises et cadeaux sont à gagner ! 🩷
+          </p>
+      </div>
+      <div id="content-22/02/2024" class="evenement">
+          <h1>Comment faire le carnaval ?</h1>
+          <p>
+            La fête bat son plein. Les RJNT ont orchestré des célébrations grandioses, rivalisant avec les éclats de confettis qui illuminent toute l'école. Démontrons au Roi notre aptitude à faire la fête sans retenue, à savourer chaque instant des festivités enchantées.
+            <br><br>
+            Depuis lundi, vous avez pu découvrir l’ambiance Rio de Ja'Noether à l’INSA ; ce jeudi, nous vous invitons à monter d’un cran avec nous. Rendez-vous au Café des Anges pour une soirée inoubliable. Et puis, vu qu’on sait que vous êtes de véritables fêtards, il va de soi d’avoir un before ! Rassurez-vous, pas de problème pour cela : suivez-nous pour participer à un Barathon spécial INSA dans Strasbourg, avec Happy Hour !
+          </p>
+      </div>
+      <div id="content-26/02/2024" class="evenement">
+          <h1>Un swing classique !</h1>
+          <p>
+            Nous y sommes ! Le Roi a exprimé son admiration pour votre engagement sans faille dans l'art du swing. Cependant, une troisième et dernière épreuve demeure : il s'agit à présent de captiver le Roi avec la magie envoûtante du swing brésilien.
+            <br><br>
+            Rejoignez-nous pour une soirée de folie au Trampo'swing Park avec les roses endiablées ! Vous pourrez tester votre force avec la machine à coup de poing, affronter vos amis dans un mini tournoi de basket et vous laisser emporter par le rythme de la samba 🕺.
+          </p>
+      </div>
+      <div id="content-28/02/2024" class="evenement">
+        <h1>Chaud do Brazil</h1>
+        <p>SAMBA ! Le Roi a senti ce carnaval vibrer au plus profond de lui et s'est engagé à régner en harmonie avec les valeurs qui ont conquis son cœur. Célébrons son couronnement lors de cet ultime événement de la campagne.
+          <br><br>
+          Notre dernière soirée de campagne, sûrement votre soirée préférée. Rejoignez-nous dès 20h à la salle Marcel Marceau pour passer une soirée mémorable. Au menu : une ambiance de folie venue tout droit du carnaval de Rio, des cocktails exotiques et des musiques qui vous feront garder le sourire malgré la fin de la campagne.</p>
+      </div>
+      <div id="content-01/03/2024" class="evenement">
+        <h1>C'est le jour J</h1>
+        <p>José et les RJNT vous remercient pour cette campagne de folie, les Insassiens et Insassiennes.</p>
+      </div>
+      
+    </div>
+    <div class="footer">
+      <div class="sites">
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61556312734951" target="_blank" title="Facebook">
+            <i class="lab la-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/riodejanoether?igsh=MXV2eTdtY25tOG5mMQ%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+            <i class="lab la-instagram"></i>
+        </a>
+        <a href="https://apps.apple.com/us/app/rjnt/id6477356580" target="_blank" title="Application IOS">
+            <i class="lab la-apple"></i>
+        </a>
+        <a href="assets/RJNT.apk" download="RJNT" title="Application Android">
+          <i class="lab la-android"></i>
+      </a>
+    </div>
+      <p>© 2024 Rio de Ja'noether</p>
+    </div>
+
+      <script src="script.js"></script>
+
+</body>
+</html>

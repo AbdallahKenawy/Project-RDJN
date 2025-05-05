@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+  <title>Rio De Ja'Noether</title>
+</head>
+
+<body>
+  <div id="shadow" class="overlay" onclick="closeNav()"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/index.html">Accueil</a>
+    <a href="/poles.html">Pôles</a>
+    <a href="/animations.html">Animations</a>
+    <a href="/evenements.html">Événements</a>
+    <a href="/partenaires.html">Partenaires</a>
+    <a href="https://riodejanoether.forumactif.com/">Forum</a>
+  </div>
+    
+    <div class="header">
+      <div class="burger-menu" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="nomliste" onclick="navigateToMainPage()">RIO DE JA'NOETHER</div>
+    </div>
+
+    <div class="accroche">
+        <h1>Pôle Soirées</h1>
+        <img class='imagepole' src="/images/poles/soirees.png">
+        <p>Le Pôle Soirées a pour mission d'organiser divers évènements festifs au sein de la 
+            communauté insassienne. Notre but : permettre à tou·te·s les apprenant·e·s, de toutes spécialités, 
+            alternant·e·s ou Incoming, de vivre des soirées mémorables ! Prépare-toi à plonger dans une 
+            expérience de divertissement inoubliable avec nous ! 
+        </p>
+    </div>
+
+    <article class="polescontainer">
+        <div class="membre" id="respo">
+            <h2>Chariot</h2>
+            <img class='imagepole' src="/images/membres/benoit.JPG">
+            <h3>Benoît Jusseaume - GC3</h3>
+        </div>
+        <div class="membre">
+            <h2>Rohki</h2>
+            <img class='imagepole' src="/images/membres/anais.JPG">
+            <h3>Anaïs Gialloreti - AI1</h3>
+        </div>
+        <div class="membre">
+            <h2>Nagui</h2>
+            <img class='imagepole' src="/images/membres/etienne.JPG">
+            <h3>Étienne Bailly - GT2E3 </h3>
+        </div>
+        <div class="membre">
+            <h2>Mecanik</h2>
+            <img class='imagepole' src="/images/membres/joffrey.JPG">
+            <h3>Joffrey Tardy - FIP GM3</h3>
+        </div>
+    </article>
+
+    <div id="evenementspole">
+        <h2 class="label">Événements Phares</h2>
+        <ul>
+            <li>
+                <div class="child left">
+                    <h3>Soirée festival - Halloween [18 octobre]</h3>
+                    <p>Fin octobre, c'est la saison des horreurs qui démarre ! Enfile ton déguisement le plus magnifiquement 
+                        terrifiant et démarre le porte-à-porte pour finir à notre soirée. Mais attention ce ne sont pas des 
+                        bonbons que nous offrons !
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="child right">
+                    <h3>Soirée ExpelliarZug  [12 avril]</h3>
+                    <p>Le mois d’avril est le mois de la magie. Sors ta meilleure cape et viens à ton premier cours de défense 
+                        contre les forces du mal, où tu apprendras le sort de remplissage de verre, et sois prêt·e à vivre des 
+                        surprises enchantées !
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="child left">
+                    <h3>Post partiels de juin – Coachella’palooza [5 juin]</h3>
+                    <p>Le swing de l'INSA est fini, et pour bien commencer l'été, quoi de mieux qu'un barbecue, de la musique 
+                        et des copains ! Alors, sors ta meilleure tenue des beaux jours et viens t'éclater dans une soirée qui te 
+                        plongera dans le thème des festivals. Totalement immersive, la soirée se passera à la fois en intérieur 
+                        et en extérieur ! De quoi profiter pleinement de la chaleur du soleil qui fait enfin son arrivée ! 
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <h2 class="label">Et encore ! N'hésite pas à jeter un coup d'œil à nos programmes, Swinguer</h2>
+    </div>
+    
+
+    <div class="downloads">
+        <a href="/assets/Programme_RJNT_Concis_Censuré.pdf" download="Programme Concis RJNT 2024.pdf" class="download-button">Programme Concis</a>
+        <a href="/assets/Programme_RJNT_Détaillé_Censuré.pdf" download="Programme Détaillé RJNT 2024.pdf" class="download-button">Programme Détaillé</a>
+    </div>
+
+    <div class="footer">
+        <div class="sites">
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61556312734951" target="_blank" title="Facebook">
+              <i class="lab la-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/riodejanoether?igsh=MXV2eTdtY25tOG5mMQ%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+              <i class="lab la-instagram"></i>
+          </a>
+          <a href="https://apps.apple.com/us/app/rjnt/id6477356580" target="_blank" title="Application IOS">
+              <i class="lab la-apple"></i>
+          </a>
+          <a href="assets/RJNT.apk" download="RJNT" title="Application Android">
+            <i class="lab la-android"></i>
+        </a>
+      </div>
+        <p>© 2024 Rio de Ja'noether</p>
+      </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>

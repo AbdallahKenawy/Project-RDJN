@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo</title>
+    <link rel="stylesheet" href="bingo.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+</head>
+<body>
+
+    <div id="join-section">
+        <input type="text" id="game-id-input" placeholder="ID Partie" />
+        <button id="join-game-button">Rejoindre la partie</button>
+    </div>
+
+    <div id="message"></div>
+
+    <div id="bingo-game" style="display:none">
+        <div id="bingo-header">
+            <span>B</span><span>I</span><span>N</span><span>G</span><span>O</span>
+        </div>
+        <table id="bingo-board">
+           
+        </table>
+    </div>
+
+    <div id="loading-screen" style="display: none;">
+        <div class="image-container">
+            <img src="images/LogoGreyscale.png" alt="Greyscale Version" class="image-greyscale">
+            <img src="images/LogoCouleur.png" alt="Color Version" class="image-color">
+          </div>          
+    </div>
+
+    <div id="admin-section" style="display:none">
+        <button id="gamestart">Commencer</button>
+        <button id="gamestop">Arrêter</button>
+        <input type="number" id="nbr-input" placeholder="Nombre a jouer">
+        <button id="nbr-confirmer">Confirmer numero</button>
+        <button id="reset-game">Reset</button>
+        <!--<button id="create-game">Create Game</button>-->
+    </div>
+
+    <button id="homepage" style="display: none;">Revenir en arrière</button>
+    
+
+    <script src="bingo.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="appli.css">
+  <style>
+    .userspecific {
+        margin: 20px;
+        width: 80%;
+        display: flex;
+        flex-direction: row; /* Align items in a row */
+        align-items: flex-start; /* Align items to the top */
+        justify-content: space-between; /* Space between the input section and results section */
+    }
+    
+    .input-section {
+        display: flex;
+        flex-direction: column;
+        width: 40%; /* Take up 40% of the width */
+    }
+    
+    .results-section {
+        display: flex;
+        flex-direction: column;
+        width: 40%; /* Take up 40% of the width */
+        height: 100%;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .notification {
+        width: 80%;
+        display: none;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+    }
+    
+    .notification.success {
+        background-color: #4CAF50; /* Green */
+    }
+    
+    .notification.warning {
+        background-color: orange; /* Orange */
+    }
+    
+    .notification.error {
+        background-color: #f44336; /* Red */
+    }
+    
+  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+  <title>Amicalisme</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Logo BdE INSA">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="appli.html">Calendrier</a></li>
+                    <li><a href="news.html">Articles</a></li>
+                    <li><a href="notifs.html">Notifications</a></li>
+                    <li><a href="amicalisme.html">Amicalisme</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-border"></div>
+    </header>
+
+    <div class="form-container" id="tutorial">
+        <form id="eventForm">
+            <h2>Amicalisme dématérialisé</h2>
+            <button id="generalUpdateButton" type="button">Mise à jour générale</button>
+
+            <div class="userspecific">
+                <!-- Input Section -->
+                <div class="input-section">
+                    <h3>Mise à jour d'un utilisateur spécifique</h3>
+                    <input type="text" id="firstNameInput" placeholder="Entrez le prénom">
+                    <input type="text" id="lastNameInput" placeholder="Entrez le nom de famille">
+                    <button id="specificUpdateButton" type="button">Mise à jour l'utilisateur</button>
+                </div>
+            
+                <!-- Results Section -->
+                <div class="results-section">
+                    <h4>Détails du N* Amicaliste</h4>
+                    <br><br>
+                    <p><strong>Excel:</strong> <span id="jsonNumeroAmicaliste"></span></p>
+                    <br>
+                    <p><strong>Appli:</strong> <span id="dbNumeroAmicaliste"></span></p>
+                </div>
+            </div>
+            
+            <div id="notification" class="notification"></div>
+            
+        </form>
+    </div>
+    <script src="amicalisme.js" type="module"></script>
+</body>
+</html>

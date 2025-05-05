@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+  <title>Rio De Ja'Noether</title>
+</head>
+
+<body>
+  <div id="shadow" class="overlay" onclick="closeNav()"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/index.html">Accueil</a>
+    <a href="/poles.html">Pôles</a>
+    <a href="/animations.html">Animations</a>
+    <a href="/evenements.html">Événements</a>
+    <a href="/partenaires.html">Partenaires</a>
+    <a href="https://riodejanoether.forumactif.com/">Forum</a>
+  </div>
+    
+    <div class="header">
+      <div class="burger-menu" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="nomliste" onclick="navigateToMainPage()">RIO DE JA'NOETHER</div>
+    </div>
+
+    <div class="accroche">
+        <h1>Pôle Prévention</h1>
+        <img class='imagepole' src="/images/poles/prevention.png">
+        <p>Le Pôle Prévention est là pour que tu puisses te sentir bien. Tout au long de l’année, nous allons te 
+            proposer différents évènements axés sur des sujets variés qui peuvent, nous l’espérons, t’intéresser. 
+            Nous allons notamment aborder les thèmes de l’alcoolémie, de la précarité étudiante, des violences 
+            sexistes et sexuelles, de la santé mentale, de l’écologie, du handicap ou encore du sexisme dans le 
+            monde du travail.
+        </p>
+    </div>
+
+    <article class="polescontainer">
+        <div class="membre" id="respo">
+            <h2>Lindt</h2>
+            <img class='imagepole' src="/images/membres/nina.JPG">
+            <h3>Nina Vergnaud - GT2E3</h3>
+        </div>
+        <div class="membre">
+            <h2>COM SAH</h2>
+            <img class='imagepole' src="/images/membres/laure.JPG">
+            <h3>Laure Thizy - GE3</h3>
+        </div>
+        <div class="membre">
+            <h2>Flash</h2>
+            <img class='imagepole' src="/images/membres/romane.JPG">
+            <h3>Romane Feliciano - PL3</h3>
+        </div>
+    </article>
+
+    <div id="evenementspole">
+        <h2 class="label">Événements Phares</h2>
+        <ul>
+            <li>
+                <div class="child left">
+                    <h3>Le Mini potager</h3>
+                    <p>Un après-midi pendant laquelle un stand est installé pour permettre aux élèves de partir avec leur pot 
+                        de légume/fruit !
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="child right">
+                    <h3>Un thème par mois</h3>
+                    <p>Chaque mois, nous abordons un nouveau thème de sensibilisation. L’ensemble des thèmes est détaillé 
+                        ci-dessous.
+                        Parmi nos thèmes: La précarité étudiante - La santé mentale - Ecologie/Environnement et plus !
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="child left">
+                    <h3>Calendrier de l’avent </h3>
+                    <p>Création d’un calendrier de l’Avent de la prévention que nous installerons dans le hall d’entrée de 
+                        l’INSA. Chaque jour, un objet lié à la prévention est offert.  
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <h2 class="label">Et encore ! N'hésite pas à jeter un coup d'œil à nos programmes, Swinguer</h2>
+    </div>
+    
+
+    <div class="downloads">
+        <a href="/assets/Programme_RJNT_Concis_Censuré.pdf" download="Programme Concis RJNT 2024.pdf" class="download-button">Programme Concis</a>
+        <a href="/assets/Programme_RJNT_Détaillé_Censuré.pdf" download="Programme Détaillé RJNT 2024.pdf" class="download-button">Programme Détaillé</a>
+    </div>
+
+    <div class="footer">
+        <div class="sites">
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61556312734951" target="_blank" title="Facebook">
+              <i class="lab la-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/riodejanoether?igsh=MXV2eTdtY25tOG5mMQ%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+              <i class="lab la-instagram"></i>
+          </a>
+          <a href="https://apps.apple.com/us/app/rjnt/id6477356580" target="_blank" title="Application IOS">
+              <i class="lab la-apple"></i>
+          </a>
+          <a href="assets/RJNT.apk" download="RJNT" title="Application Android">
+            <i class="lab la-android"></i>
+        </a>
+      </div>
+        <p>© 2024 Rio de Ja'noether</p>
+      </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>

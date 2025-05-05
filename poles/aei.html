@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <title>Rio De Ja'Noether</title>
+</head>
+
+<body>
+  <div id="shadow" class="overlay" onclick="closeNav()"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/index.html">Accueil</a>
+    <a href="/poles.html">Pôles</a>
+    <a href="/animations.html">Animations</a>
+    <a href="/evenements.html">Événements</a>
+    <a href="/partenaires.html">Partenaires</a>
+    <a href="https://riodejanoether.forumactif.com/">Forum</a>
+  </div>
+    
+    <div class="header">
+      <div class="burger-menu" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="nomliste" onclick="navigateToMainPage()">RIO DE JA'NOETHER</div>
+    </div>
+
+    <div class="accroche">
+        <h1>Pôle AEI</h1>
+        <img class='imagepole' src="/images/poles/aei.png">
+        <p>Le pôle AEI (Association des Elèves des INSA) est chargé de mettre en lien tous les INSA autour 
+            d’évènements. Son objectif est donc de rassembler les apprenant·e·s des autres INSA avec celle·eux 
+            de Strasbourg, créer des rencontres et des souvenirs entre elles·eux. Il joue aussi un rôle de 
+            représentation des intérêts des apprenant·e·s de l’INSA Strasbourg au niveau des différentes 
+            instances liées à l’AEI (Association des Élèves des INSA). Nous espérons à travers ce pôle et nos 
+            évènements, favoriser l’ouverture et le partage entre les apprenant·e·s de l’INSA Strasbourg et des 
+            autres INSA. </p>
+    </div>
+
+    <article class="polescontainer">
+        <div class="membre" id="respo">
+            <h2>Scoobabou</h2>
+            <img class='imagepole' src="/images/membres/felix.JPG">
+            <h3>Félix VIROLLE - GC3</h3>
+        </div>
+    </article>
+
+    <div id="evenementspole">
+        <h2 class="label">Événements Phares</h2>
+        <ul>
+            <li>
+                <div class="child left">
+                    <h3>Congrès de l’AEI [Un week-end Novembre 2024]</h3>
+                    <p>Le congrès de l’AEI est un week-end où toutes les personnes impliquées dans l’associatif des différents 
+                        INSA sont conviées à se réunir pour présenter et débattre, par exemple sur la méthode de gestion de 
+                        leur association, leur expérience sur les différents évènements réalisés, la gestion des VSS ou encore 
+                        l’évolution de l’associatif par rapport au développement durable. Pour son retour, il a été imaginé une 
+                        vingtaine d’apprenant·e·s de chaque INSA se réunissant à Rennes un week-end de novembre 2024. 
+                        Les apprenant·e·s des associations BdE, Gala, Association Sportive, INSA Shop, Instart’up, ou encore 
+                        des Commissions Humanitaires sont concerné·e·s.</p>
+                </div>
+            </li>
+            <li>
+                <div class="child right">
+                    <h3> Défoule-toi aux 24h de l’INSA [17:19 mai]</h3>
+                    <p>Les 24H de l’INSA est le plus gros festival étudiant de France. En y participant, tu pourras profiter de 
+                        concerts, de différents types d’animations proposées, ou encore regarder les courses de vélo et à 
+                        pied.  
+                        Tu es libre de profiter du festival dans la limite du respect des règles fixées en amont.  </p>
+                </div>
+            </li>
+            <li>
+                <div class="child left">
+                    <h3>Organisation du High Five 2025 [25:30 mars]</h3>
+                    <p>Le High Five a été annulé pour 2024. Son modèle actuel n’est plus viable pour le groupe INSA. Il faut 
+                        donc envisager une nouvelle version de ce magnifique évènement de l’AEI pour 2025. Le bureau de 
+                        gestion de l’AEI a déjà effectué un travail de réflexion sur la prochaine version.</p>
+                </div>
+            </li>
+        </ul>
+        <h2 class="label">Et encore ! N'hésite pas à jeter un coup d'œil à nos programmes, Swinguer</h2>
+    </div>
+    
+
+    <div class="downloads">
+        <a href="/assets/Programme_RJNT_Concis_Censuré.pdf" download="Programme Concis RJNT 2024.pdf" class="download-button">Programme Concis</a>
+        <a href="/assets/Programme_RJNT_Détaillé_Censuré.pdf" download="Programme Détaillé RJNT 2024.pdf" class="download-button">Programme Détaillé</a>
+    </div>
+
+    <div class="footer">
+        <div class="sites">
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61556312734951" target="_blank" title="Facebook">
+              <i class="lab la-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/riodejanoether?igsh=MXV2eTdtY25tOG5mMQ%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+              <i class="lab la-instagram"></i>
+          </a>
+          <a href="https://apps.apple.com/us/app/rjnt/id6477356580" target="_blank" title="Application IOS">
+              <i class="lab la-apple"></i>
+          </a>
+          <a href="assets/RJNT.apk" download="RJNT" title="Application Android">
+            <i class="lab la-android"></i>
+        </a>
+      </div>
+        <p>© 2024 Rio de Ja'noether</p>
+      </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>

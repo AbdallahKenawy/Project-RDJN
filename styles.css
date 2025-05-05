@@ -1,0 +1,1198 @@
+/* #region Template */
+
+@font-face {
+  font-family: 'P22 Nudgewink Bold';
+  src: url('fonts/P22Nudgewink-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'P22 Nudgewink Regular';
+  src: url('fonts/p22nudgewinkpro-regular.ttf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'P22 Nudgewink Light';
+  src: url('fonts/p22nudgewink-light.ttf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  display: block;
+  height: 100vh;
+  margin: 0;
+  background: radial-gradient(ellipse,#fee5ef,#FF95BD,#fee5ef);
+  color: black;
+  font-family: 'P22 Nudgewink Bold', sans-serif;
+}
+
+h1 {
+  padding-top: 2vh;
+  letter-spacing: 4px;
+  color: plum; /* Initial text color, will be overlaid by gradient */
+  font-size: 1.7em;
+  background: linear-gradient(
+    to right, 
+    plum,
+    rgba(255, 105, 180, 0.8), 
+    plum
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* For Webkit browsers */
+  animation: shine 1.5s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+p{
+  font-size: 1.2em;
+  font-family: 'P22 Nudgewink Regular', sans-serif;
+}
+
+ .overlay{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1;
+ }
+
+ .sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.header{
+  background-color: #ff95bd;
+  overflow: hidden;
+  padding: 15px;
+  color: #FF4591;
+  display: flex;
+  align-items:center;
+}
+
+.burger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  padding-left: 1vw;
+}
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: #FF4591;
+  margin: 3px 0;
+}
+
+.nomliste {
+cursor: pointer;
+flex-grow: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+text-shadow: -2px 2px 4px #C10061;
+font-size: 2em;
+}
+
+.footer{
+display: flex;
+flex-direction: column;
+width: 100%;
+justify-content: center;
+align-items: center;
+background-color: #FF4591;
+}
+
+.socials{
+text-align: center;
+  margin-top:2vh;
+}
+
+.socials a {
+display: inline-block;
+margin: 1vw;
+font-size: 1.5em;
+color: #333; /* Change the color as needed */
+}
+
+.accroche{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: aliceblue;
+padding: 3vw;
+}
+
+.accroche h1{
+margin-top: 0;
+font-size: calc(1em + 1.2vw);
+}
+
+.accroche p{
+color: #BF00A4;
+text-align: center; /* Correct property for centering text */
+font-size: calc(1em + 0.6vw); /* Responsive font size example */
+padding: 0.5vh;
+}
+
+.accroche img{
+  max-width: 40%;
+}
+
+.label{
+  background-color: white;
+  border: 5px solid plum;
+  border-radius: 20px;
+  box-sizing: border-box; 
+  padding:15px 35px 15px;
+}
+
+@media (max-width: 600px) {
+
+  .h1{
+    font-size: 1.4em;
+  }
+
+  .h2{
+    font-size: 1.2em;
+  }
+
+  .h3{
+    font-size: 0.9em;
+  }
+
+  .p{
+    font-size: 0.7em;
+  }
+
+  .accroche {
+    padding: 5vw;
+  }
+
+  .accroche img {
+    max-width: 80%;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .nomliste{
+    font-size: 24px;
+  }
+
+  .bar{
+    width:28px;
+    height: 4px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* #endregion */
+
+/* #region Accueil */
+
+#index.accroche img{
+  max-width: 90%;
+}
+
+#index.accroche p{
+  font-family: 'Gloria Hallelujah', cursive;
+  line-height: 1.2em;
+}
+
+
+#containermotpresident{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#motpresident{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border: 5px solid #FF4591;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#motpresident img{
+  width: 50%;
+}
+
+#contenumotpresident{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+#contenumotpresident p{
+  font-family:'Gloria Hallelujah', cursive;
+  font-size: 1em;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #motpresident {
+    flex-direction: column; /* Stack elements vertically */
+    width: 90%; /* Increase width for smaller screens */
+    max-width: none; /* Override max-width */
+  }
+
+  #motpresident h1{
+    font-size: 1.4em;
+  }
+
+  #motpresident img {
+    width: 80%; /* Adjust image width for smaller screens */
+    margin-bottom: 10px; /* Add space below the image */
+  }
+
+  #contenumotpresident {
+    width: 100%; /* Use full width for content */
+  }
+}
+
+#commentary-box {
+  position: relative;
+  z-index: 0;
+  background-color: white;
+  border: 5px solid plum;
+  border-radius: 20px;
+  box-sizing: border-box; 
+  padding: 15px;
+  position: relative;
+  width: 80%;
+  height: 50%;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#commentary-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/Logo-RJNT-Couleur-Nom.png'); /* Path to your image */
+  background-size: contain; /* Cover the entire area of the box */
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+#commentary-controls{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#commentary-controls button{
+  background-color: #FF4591;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-family: 'P22 Nudgewink Bold', sans-serif;
+  text-transform: uppercase;
+}
+
+#commentary-controls button:hover {
+  background-color: #C10061;
+}
+
+/* Base state for content */
+#commentary-content {
+  overflow: hidden;
+  position: relative;
+  min-height: 150px; /* Adjust based on your content */
+  text-align: center;
+  justify-content: center;
+}
+
+/* Animation classes */
+.slide-in-left, .slide-in-right {
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+/* Keyframes for sliding from the left */
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for sliding from the right */
+@keyframes slideRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Applying the animations */
+.slide-in-left {
+  animation-name: slideLeft;
+}
+
+.slide-in-right {
+  animation-name: slideRight;
+}
+
+.commentary-text {
+  color: #BF00A4;
+  font-size: calc(1em + 0.6vw); /* Responsive font size */
+  padding: 0.5vh;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  #commentary-box {
+    width: 95%;
+  }
+
+  #commentary-text {
+    font-size: 1em; /* Smaller font size for mobile */
+  }
+
+  #commentary-controls button {
+    padding: 8px 10px; /* Slightly smaller buttons on mobile */
+  }
+}
+
+#part{
+  width: 95%;
+}
+
+
+/* #endregion */
+
+/* #region Poles */
+
+.polescontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  padding: 20px;
+}
+
+.pole{
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  width: 32%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border: 5px solid plum;
+  border-radius: 20px;
+  box-sizing: border-box; 
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  line-height: 1.3;
+}
+
+.pole:hover {
+  transform: scale(1.05); /* Scale up slightly */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Add shadow to make it 'pop' */
+}
+
+.pole h2{
+  color:#C10061;
+}
+
+.membre{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  min-height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border: 5px solid plum;
+  border-radius: 20px;
+  box-sizing: border-box; 
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+  line-height: 1.3;
+}
+
+.imagepole{
+  height: auto;
+  width: 90%;
+  border-radius: 10px;
+}
+
+@keyframes glitter {
+  0% {
+    box-shadow: 0 0 5px 2px #ff95bd, 
+                0 0 10px 2px #FF4591, 
+                0 0 15px 2px #ffbfd7;
+  }
+  25% {
+    box-shadow: 0 -5px 5px 2px #ff95bd, 
+                5px 0 10px 2px #FF4591, 
+                0 5px 15px 2px #ffbfd7, 
+                -5px 0 20px 2px #ff95bd;
+  }
+  50% {
+    box-shadow: 0 0 5px 2px #ff95bd, 
+                0 -5px 10px 2px #FF4591, 
+                5px 0 15px 2px #ffbfd7, 
+                0 5px 20px 2px #ff95bd, 
+                -5px 0 25px 2px #FF4591;
+  }
+  75% {
+    box-shadow: 5px 0 5px 2px #ff95bd, 
+                0 5px 10px 2px #FF4591, 
+                -5px 0 15px 2px #ffbfd7, 
+                0 -5px 20px 2px #ff95bd;
+  }
+  100% {
+    box-shadow: 0 0 5px 2px #ff95bd, 
+                0 0 10px 2px #FF4591, 
+                0 0 15px 2px #ffbfd7;
+  }
+}
+
+
+.membre:hover{
+  transform: scale(1.05);
+  animation: glitter 2s infinite linear;
+}
+
+#respo.membre h2{
+  color: #ff95bd;
+}
+
+#evenementspole{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0px 20px;
+  flex-direction: column;
+  min-height: fit-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#evenementspole ul, #evenementspole ul li{
+  list-style-type: none;
+  padding:10px
+}
+
+.child{
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  margin:10px;
+  border: #F83C7A solid 5px;
+  border-radius: 30px;
+}
+
+.child h3{
+  font-size: 1.3em;
+  color: #FF4591;
+}
+
+.child.left{
+  padding-left: 20px;
+  text-align: left;
+}
+
+.child.right{
+  padding-right: 20px;
+  text-align: right;
+}
+
+.downloads{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0px 20px;
+  padding: 15px;
+}
+
+.download-button{
+  display: inline-block;
+  padding: 20px 100px 20px;
+  background-color: #e81a54;
+  border-radius: 15px;
+  color: white;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  background-color: #ca0c3b; /* Darker blue on hover */
+}
+
+@media (max-width: 700px) {
+  .pole, .membre {
+    width: 90%;
+    height: fit-content;
+    margin: 10px auto; /* Centers the content with automatic horizontal margins */
+  }
+
+  .polescontainer, #evenementspole {
+    padding: 10px; /* Reduces padding for a tighter layout */
+  }
+  
+  .pole h2, .membre h2, #evenementspole h2 {
+    font-size: 1.2em; /* Adjusts heading size for better readability on small screens */
+  }
+  
+  .pole h3, .membre h3 {
+    font-size: 0.9em; /* Adjusts paragraph size for consistency */
+  }
+}
+
+@media (max-width: 500px) {
+  .pole, .membre {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .pole h2, .membre h2, #evenementspole h2 {
+    font-size: 1.2em;
+  }
+
+  .pole h3, .membre h3 {
+    font-size: 0.9em;
+  }
+
+  .pole p{
+    font-size: 0.8em;
+  }
+
+  #evenementspole ul {
+    align-items: center;
+    padding: 0;
+  }
+
+  .child.left,.child.right{
+    text-align: center;
+  }
+
+}
+
+/* #endregion */
+
+/* #region Animations */
+
+* {
+  box-sizing: border-box;
+}
+
+.tab {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: aliceblue;
+  width: 100%; /* Adjusted from 100vw to avoid scrollbar issues */
+}
+
+.tab button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 24px 15px;
+  transition: 0.3s;
+  font-size: 17px;
+  flex-grow: 1;
+  background-color: #f83c7a;
+  font-family: 'P22 Nudgewink Bold', sans-serif;
+  color: black;
+}
+
+.tab button:hover {
+  background-color: #e81a54;
+}
+
+.tab button.active {
+  background-color: #ca0c3b;
+}
+
+.tabcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  width: 100%; /* Adjusted for consistency */
+}
+
+.chanson {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  margin: 10px auto; /* Centered with automatic margins */
+  background-color: aliceblue;
+  border: #C10061 solid 5px;
+  border-radius: 7px;
+  line-height: 1.9em;
+}
+
+.chansonheader {
+  background-color: #C10061;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.chansonheader h2::before {
+  content: '▼';
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.chansonheader.open h2::before {
+  content: '▲';
+}
+
+#history {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: aliceblue;
+  width: 60%;
+  margin: 5px auto; /* Centered with automatic margins */
+  line-height: 2em;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid #C10061;
+  border-radius: 10px;
+  color: #5d1039;
+}
+
+@media (max-width: 600px) {
+  .chanson {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  #history {
+    width: 80%;
+  }
+
+  #history:after {
+    animation: slide 1.5s infinite;
+  }
+}
+
+@media (max-width: 480px) {
+  #history {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  #history:after {
+    animation: slide 1s infinite;
+  }
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #ff95bd;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #C10061;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+
+
+/* #endregion */
+
+/* #region Evenements */
+
+.evenementscontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendarcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 5px solid #C10061;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding-bottom: 5%;
+  margin-top: 2%;
+  min-width: fit-content;
+  width: 90%;
+}
+
+#calendar {
+  width: 90%;
+  border: 5px solid plum;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 5%;
+}
+
+th, td {
+  padding: 3%;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.today {
+  background-color: #C10061;
+  color: black;
+}
+
+.clickable {
+  background-color: #ff95bd;
+  color: black;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.clickable:hover {
+  background-color: #f83c7a;
+}
+
+.calendarheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust this as needed to fit your design */
+  width: 90%;
+  padding: 2% 30px 2%;
+}
+
+.arrow-container {
+  display: flex; /* This ensures that the spans are next to each other */
+  align-items: center;
+}
+
+.calendarheader span {
+  height: 38px;
+  width: 38px;
+  margin: 0 5px; /* Adjust margin as needed to reduce space between arrows */
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 2.5rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.calendarheader span:hover {
+  background: #f2f2f2;
+}
+
+.evenement {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 5px solid #C10061;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 5%;
+  margin-top: 5%;
+  text-align: center;
+  animation: glowing 2s infinite;
+}
+
+.evenement:last-child {
+  margin-bottom: 5%;
+}
+
+@keyframes glowing {
+  0%, 100% {
+    box-shadow: 0 0 10px #ff95bd;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff95bd, 0 0 30px #ff95bd;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendarcontainer, #calendar, .evenement {
+    width: 95%;
+  }
+
+  #calendar-title{
+    font-size: 0.6em;
+  }
+
+  .calendarheader, .calendarheader span {
+    padding: 2% 10px;
+    font-size: 2rem;
+  }
+
+  table, th, td {
+    padding: 2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendarcontainer, #calendar, .evenement {
+    width: 98%;
+    padding: 3%;
+  }
+
+  .calendarheader, .calendarheader span {
+    font-size: 1.5rem;
+  }
+
+  #calendar-title{
+    font-size: 0.7em;
+  }
+
+  table, th, td {
+    padding: 1.5%;
+  }
+}
+
+
+/* #endregion */
+
+/* #region Partenaires */
+
+.responsive-iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  padding-top: 75%; /* 4:3 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* Optional: Removes the border around the iframe */
+}
+
+/* #endregion */
+
+/* #region Admin */
+/* Admin Page Specific Styles */
+
+/* Adjustments for admin comment input, assuming it's a class */
+.input-admin-comment {
+  width: calc(100% - 20px); /* Adjust based on parent padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ff95bd; /* Pink border */
+  border-radius: 4px;
+}
+
+/* Adjustments for checkboxes, assuming they have a specific class */
+.checkbox-is-accepted {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.button-update-info {
+  background-color: #FF4591; /* Match the burger menu color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-family: 'P22 Nudgewink Bold', sans-serif;
+}
+
+.button-update-info:hover {
+  background-color: #C10061; /* Darker pink on hover */
+}
+
+
+/* Styling for container elements like .documentDetails, assuming this is an ID */
+#documentDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards in the container */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the entire container */
+}
+
+.document-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center; /* Center content within each card */
+  flex: 1 1 300px; /* Allow flex-grow and flex-shrink, with base width of 300px */
+  max-width: 300px; /* Maximum width of the card */
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly; /* Distribute space between elements inside the card */
+}
+
+
+.section-divider {
+  border-bottom: 1px solid #eee; /* Light divider for visual separation */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.document-card img,
+.document-card video {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional: for styling */
+}
+
+
+@media (max-width: 1024px) {
+  .document-card {
+      flex-basis: calc(50% - 40px); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .document-card {
+      flex-basis: 100%; /* One card per row on small screens */
+  }
+}
+
+.admin-input{
+  width: calc(100% - 20px); /* Adjust based on parent padding */
+  padding: 10px 12px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 3px solid #ff95bd; /* Pink border */
+  font-family: 'P22 Nudgewink Bold', sans-serif;
+}
+
+.button-valider {
+  background-color: #FF4591; /* Match the burger menu color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-family: 'P22 Nudgewink Bold', sans-serif;
+}
+
+.button-valider:hover {
+  background-color: #C10061; /* Darker pink on hover */
+}
+
+
+.button-delete:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+.button-delete {
+  background-color: #ff4d4d; /* Red color for deletion */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-family: 'P22 Nudgewink Bold', sans-serif;
+}
+
+.button-delete:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+.button-download {
+  background-color: #4CAF50; /* A green color; adjust as needed */
+  color: white;
+  padding: 10px 20px;
+  border:none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  font-family: 'P22 Nudgewink Bold', sans-serif;
+}
+
+.button-download:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.searchInput{
+  padding:5px 1px;
+  border: none;
+  border-radius: 5px;
+  border: 3px solid #ff95bd; /* Pink border */
+  font-family: 'P22 Nudgewink Bold', sans-serif;
+}
+
+.recherche-Valider{
+  background-color: #FF4591; /* Match the burger menu color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-family: 'P22 Nudgewink Bold', sans-serif;
+}
+
+
+
+#searchContainer{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 3px solid #FF4591;
+  border-radius: 5px;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+/* #endregion */

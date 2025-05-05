@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <title>Rio De Ja'Noether</title>
+</head>
+
+<body>
+  <div id="shadow" class="overlay" onclick="closeNav()"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/index.html">Accueil</a>
+    <a href="/poles.html">Pôles</a>
+    <a href="/animations.html">Animations</a>
+    <a href="/evenements.html">Événements</a>
+    <a href="/partenaires.html">Partenaires</a>
+    <a href="https://riodejanoether.forumactif.com/">Forum</a>
+  </div>
+    
+    <div class="header">
+      <div class="burger-menu" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="nomliste" onclick="navigateToMainPage()">RIO DE JA'NOETHER</div>
+    </div>
+
+    <div class="accroche">
+        <h1>Pôle Alternance</h1>
+        <img class='imagepole' src="/images/poles/alternance.png">
+        <p>Le Pôle Alternance, c’est avant tout le pôle qui représente les alternant·e·s dans le but de faciliter 
+            leur quotidien en gérant l’administration pour obtenir un maximum de confort lors des périodes au 
+            sein de l’INSA. Il a pour mission de favoriser l’accueil des apprenant·e·s, en s’adaptant à leurs emplois 
+            du temps et horaires, qui diffèrent sensiblement de ceux des élèves en formation initiale, afin de 
+            rendre le maximum des évènements accessibles.</p>
+    </div>
+
+    <article class="polescontainer">
+        <div class="membre" id="respo">
+            <h2>TGA</h2>
+            <img class='imagepole' src="/images/membres/anaelle.JPG">
+            <h3>Anaëlle Martinez - FISA GC3</h3>
+        </div>
+        <div class="membre">
+            <h2>FIP GE</h2>
+            <img class='imagepole' src="/images/membres/neo.JPG">
+            <h3>Neo Adeline - FIP GT2E3</h3>
+        </div>
+        <div class="membre">
+            <h2>Mecanik</h2>
+            <img class='imagepole' src="/images/membres/joffrey.JPG">
+            <h3>Joffrey Tardy - FIP GM3 </h3>
+        </div>
+        <div class="membre">
+            <h2>The Roch</h2>
+            <img class='imagepole' src="/images/membres/jr.JPG">
+            <h3>Jean-Roch Peyronnel - FIP GE3  </h3>
+        </div>
+    </article>
+
+    <div id="evenementspole">
+        <h2 class="label">Événements Phares</h2>
+        <ul>
+            <li>
+                <div class="child left">
+                    <h3>Été en folie !</h3>
+                    <p>Lorsque  la  fin  d’année  scolaire  se  présente,  le  Pôle  Alternance  prend  la  main  sur  l’été  du  BdE, 
+                        proposant différentes activités aux apprenant·e·s de l’INSA, alternant·e·s ou non, qui sont encore 
+                        présent·e·s à Strasbourg. <br>
+                        
+                        Samedi 22 ou dimanche 23 juin : Bowling.  <br> 
+                        Samedi 6 ou dimanche 7 juillet : Barathon.  <br>
+                        Samedi 20 ou dimanche 21 juillet : Aquafun Park du Lac de Achard.  <br>
+                        Samedi 3 ou dimanche 4 août : Pique-nique.  <br>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="child right">
+                    <h3> Le rdv du mois ! [Tous les 6 du mois]</h3>
+                    <p>Une date à noter dans ton agenda ? Facile, le 6 ! Rejoins-nous chaque 6 du mois pour des moments 
+                        conviviaux et des rencontres entre alternant·e·s lors de nos diverses activités, que ce soit au bar, au 
+                        cinéma, lors d'un pique-nique, et bien plus encore ! Cet évènement a pour but de permettre aux 
+                        alternant·e·s de se rencontrer, d’échanger et de créer des liens.</p>
+                </div>
+            </li>
+            <li>
+                <div class="child left">
+                    <h3>Remaniement des emplois du temps</h3>
+                    <p>La  modification  de  l’emploi  du  temps  permet  aux  alternant·e·s  de  participer  à  un  maximum 
+                        d’évènements d’accueil ainsi qu’à la vie associative de l’INSA durant toute l’année.  
+                        La modification de l’emploi du temps permet aux apprenant·e·s d’être présent·e·s à un maximum 
+                        d’évènements organisés pour leur accueil à l'INSA et de participer à la vie associative durant toute 
+                        l'année. Afin de faire perdurer cette modification d’emploi du temps de façon pérenne, les Pôles Alternance 
+                        des  deux  listes,  Noetherian  et  Rio  De  Ja’Noether,  s'associent  dans  le  but  d'avoir  un  impact 
+                        important  auprès de l’administration.</p>
+                </div>
+            </li>
+        </ul>
+        <h2 class="label">Et encore ! N'hésite pas à jeter un coup d'œil à nos programmes, Swinguer</h2>
+    </div>
+    
+
+    <div class="downloads">
+        <a href="/assets/Programme_RJNT_Concis_Censuré.pdf" download="Programme Concis RJNT 2024.pdf" class="download-button">Programme Concis</a>
+        <a href="/assets/Programme_RJNT_Détaillé_Censuré.pdf" download="Programme Détaillé RJNT 2024.pdf" class="download-button">Programme Détaillé</a>
+    </div>
+
+    <div class="footer">
+        <div class="sites">
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61556312734951" target="_blank" title="Facebook">
+              <i class="lab la-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/riodejanoether?igsh=MXV2eTdtY25tOG5mMQ%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+              <i class="lab la-instagram"></i>
+          </a>
+          <a href="https://apps.apple.com/us/app/rjnt/id6477356580" target="_blank" title="Application IOS">
+              <i class="lab la-apple"></i>
+          </a>
+          <a href="assets/RJNT.apk" download="RJNT" title="Application Android">
+            <i class="lab la-android"></i>
+        </a>
+      </div>
+        <p>© 2024 Rio de Ja'noether</p>
+      </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>

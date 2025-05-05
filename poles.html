@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+  <title>Rio De Ja'Noether</title>
+</head>
+
+<body>
+  <div id="shadow" class="overlay" onclick="closeNav()"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Accueil</a>
+    <a href="poles.html">Pôles</a>
+    <a href="animations.html">Animations</a>
+    <a href="evenements.html">Événements</a>
+    <a href="partenaires.html">Partenaires</a>
+    <a href="https://riodejanoether.forumactif.com/">Forum</a>
+  </div>
+    
+    <div class="header">
+      <div class="burger-menu" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="nomliste" onclick="navigateToMainPage()">RIO DE JA'NOETHER</div>
+    </div>
+
+    <div class="accroche">
+        <h1>Les Swinguers</h1>
+        <p>Voici les 14 pôles des RJNT, nous sommes tous là pour vous proposer des événements variés qui vont
+             vous faire vivre une année de folie !! 🩷 </p>
+    </div>
+
+    <article class="polescontainer">
+        <div class="pole" onclick="navigateToPole('accueil')">
+            <h2>Pôle Accueil</h2>
+            <img class="imagepole" src="images/poles/acceuil.png">
+            <p>Le pôle Accueil vous attend avec impatience sur nos évènements pour découvrir ta promotion avec le sourire.</p>
+        </div>
+        <div class="pole" onclick="navigateToPole('aei')">
+            <h2>Pôle AEI</h2>
+            <img class="imagepole" src="images/poles/aei.png">
+            <p>Le pôle AEI a pour but de faire le lien entre les élèves de tous les INSA.</p>
+        </div>
+        <div class="pole" onclick="navigateToPole('alternance')">
+            <h2>Pôle Alternance</h2>
+            <img class="imagepole" src="images/poles/alternance.png">
+            <p>Le Pôle Alternance fait en sorte de te faciliter ton quotidien au sein de l'INSA, mais aussi t'attend tout au long de l'année pour passer de beaux moments autour de nos événements. </p>
+        </div>
+        <div class="pole" onclick="navigateToPole('a&i')">
+            <h2>Pôle Arts & Industries</h2>
+            <img class="imagepole" src="images/poles/a&i.png">
+            <p>Le rôle du pôle Arts & Industries est de faire le lien entre l'association des anciens diplomés et les apprenants actuels.</p>
+        </div>
+        <div class="pole" onclick="navigateToPole('bureau')">
+            <h2>Pôle Bureau</h2>
+            <img class="imagepole" src="images/poles/bureau.png">
+            <p>Le rôle du Bureau est de faciliter la communication entre les élèves, l’administration et les instances externes à l’INSA.</p>
+        </div>
+        <div class="pole" onclick="navigateToPole('clubs')">
+            <h2>Pôle Clubs</h2>
+            <img class="imagepole" src="images/poles/clubs.png">
+            <p>Le Pôle Clubs mets en avant les clubs auprès des inssassien-ne-s, vous pourrez y trouver un club sur votre passion et des gens avec qui la partager .</p>
+        </div>
+        <div class="pole" onclick="navigateToPole('communication')">
+            <h2>Pôle Communication</h2>
+            <img class="imagepole" src="images/poles/communication.png">
+            <p>Le pôle communication veille à la bonne communication des évènements proposés.</p>
+        </div>
+        <div class="pole" onclick="navigateToPole('culture')">
+            <h2>Pôle Culture</h2>
+            <img class="imagepole" src="images/poles/culture.png">
+            <p>Tu t’ennuies pendant ton temps libre et tu ne sais pas ce que tu pourrais faire pour t’occuper ? Ne t’en fais pas, le pôle Culture t’a préparé des activités à foison, que ce soit sportives, culturelles ou encore culinaires. </p>
+        </div>
+        <div class="pole" onclick="navigateToPole('international')">
+            <h2>Pôle International</h2>
+            <img class="imagepole" src="images/poles/international.png">
+            <p>Le Pôle International accueille les internationaux à Strasbourg et soutient les insassien·ne·s partant en mobilité ; nous favorisons les rencontres, le partage et l'intégration. </p>
+        </div>
+        <div class="pole" onclick="navigateToPole('partenaires')">
+            <h2>Pôle Partenaires</h2>
+            <img class="imagepole" src="images/poles/partenaires.png">
+            <p>Le pôle partenaire est là pour t'offrir les meilleures réductions chez nos partenaires. Sois rassuré, ton porte-monnaie va retrouver le sourire.</p>
+        </div>
+        <div class="pole" onclick="navigateToPole('prévention')">
+            <h2>Pôle Prévention</h2>
+            <img class="imagepole" src="images/poles/prevention.png">
+            <p>Le pôle prev vous invite à découvrir ces évènements si tu veux swinger toute l'année en sécurité.</p>
+        </div>
+        <div class="pole" onclick="navigateToPole('réseaux')">
+            <h2>Pôle Réseaux</h2>
+            <img class="imagepole" src="images/poles/reseaux.png">
+            <p>Le pôle Réseaux vous réserve une expérience riche en rencontres autour d'évenements bien plus que festifs. Alors rejoignez-nous pour explorer diverses écoles et élargir vos horizons. </p>
+        </div>
+        <div class="pole" onclick="navigateToPole('soirées')">
+            <h2>Pôle Soirées</h2>
+            <img class="imagepole" src="images/poles/soirees.png">
+            <p>Le pôle soirée vous attend chaud comme la braise pour swinger à nos événements. Pleins de suprises vous attendent.</p>
+        </div>
+        <div class="pole" onclick="navigateToPole('sth')">
+            <h2>Pôle STH</h2>
+            <img class="imagepole" src="images/poles/sth.png">
+            <p>Le pole STH est pret à vous régaler toute l'année. Au programme plein de nouveauté pour faire kiffer les STH et les I2.</p>
+        </div>
+    </article>
+
+    <div class="footer">
+        <div class="sites">
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61556312734951" target="_blank" title="Facebook">
+              <i class="lab la-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/riodejanoether?igsh=MXV2eTdtY25tOG5mMQ%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+              <i class="lab la-instagram"></i>
+          </a>
+          <a href="https://apps.apple.com/us/app/rjnt/id6477356580" target="_blank" title="Application IOS">
+              <i class="lab la-apple"></i>
+          </a>
+          <a href="assets/RJNT.apk" download="RJNT" title="Application Android">
+            <i class="lab la-android"></i>
+        </a>
+      </div>
+        <p>© 2024 Rio de Ja'noether</p>
+      </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

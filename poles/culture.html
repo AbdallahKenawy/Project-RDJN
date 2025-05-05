@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+  <title>Rio De Ja'Noether</title>
+</head>
+
+<body>
+  <div id="shadow" class="overlay" onclick="closeNav()"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/index.html">Accueil</a>
+    <a href="/poles.html">Pôles</a>
+    <a href="/animations.html">Animations</a>
+    <a href="/evenements.html">Événements</a>
+    <a href="/partenaires.html">Partenaires</a>
+    <a href="https://riodejanoether.forumactif.com/">Forum</a>
+  </div>
+    
+    <div class="header">
+      <div class="burger-menu" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="nomliste" onclick="navigateToMainPage()">RIO DE JA'NOETHER</div>
+    </div>
+
+    <div class="accroche">
+        <h1>Pôle Culture</h1>
+        <img class='imagepole' src="/images/poles/culture.png">
+        <p>Le Pôle Culture c’est quoi ? C'est tout d’abord un pôle de partage : nous souhaitons que tou·te·s les 
+            Insassien·ne·s puissent participer à nos évènements sans distinction aucune afin de pouvoir faire des 
+            rencontres et échanger avec le maximum de personnes. C'est aussi un pôle de découverte, notre but 
+            est de permettre aux Insassien·ne·s de réaliser des choses qu’il·elle·s n’auraient pas l’occasion de 
+            faire en temps normal, le tout dans un cadre convivial.</p>
+    </div>
+
+    <article class="polescontainer">
+        <div class="membre" id="respo">
+            <h2>Krist</h2>
+            <img class='imagepole' src="/images/membres/maxime.JPG">
+            <h3>Maxime Wahl - AI1</h3>
+        </div>
+        <div class="membre">
+            <h2>Joggo</h2>
+            <img class='imagepole' src="/images/membres/gael.JPG">
+            <h3>Gaël Mineo - GE3</h3>
+        </div>
+        <div class="membre">
+            <h2>The Roch</h2>
+            <img class='imagepole' src="/images/membres/jr.JPG">
+            <h3>Jean-Roch Peyronnel - FIP GE3</h3>
+        </div>
+    </article>
+
+    <div id="evenementspole">
+        <h2 class="label">Événements Phares</h2>
+        <ul>
+            <li>
+                <div class="child left">
+                    <h3>Laz’hunger game  [8 mai]</h3>
+                    <p>Tu aimes faire des balades dans la nature ? Tu aimerais découvrir la campagne alsacienne ? Et par-
+                        dessus tout, tu aimes manger ? Alors la marche gourmande est faite pour toi ! Le temps d’une journée, 
+                        le Pôle Culture te propose d’effectuer une promenade au plus proche de la nature, ponctuée de 
+                        plusieurs étapes. Partage un moment convivial et savoureux autour de plats régionaux.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="child right">
+                    <h3>Après-midi Jeux Vidéo [18 avril]</h3>
+                    <p>Tu souhaites te détendre avec tes ami·e·s en partageant un moment convivial autour des jeux-vidéo ? 
+                        Rends-toi à l’après-midi Jeux Vidéo ! Passe de la vitesse de Mario Kart à la souplesse et l’agilité de Just 
+                        Dance, et montre-nous tes talents de dribbleurs sur FIFA. Nous te proposons également de participer 
+                        à des sessions de jeux sur Gartic Phone, Among Us et Undercover ! 
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="child left">
+                    <h3>[janvier]</h3>
+                    <p>L’évènement consiste principalement à rallier tou·te·s les Insassien·ne·s autour d’un même sujet qui 
+                        leur tient à cœur : l’INSA Strasbourg ainsi que la culture qui en découle. Les équipes s’affrontent autour 
+                        d’un quiz afin d’atteindre le sommet et de découvrir qui connaît le mieux son école.
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <h2 class="label">Et encore ! N'hésite pas à jeter un coup d'œil à nos programmes, Swinguer</h2>
+    </div>
+    
+
+    <div class="downloads">
+        <a href="/assets/Programme_RJNT_Concis_Censuré.pdf" download="Programme Concis RJNT 2024.pdf" class="download-button">Programme Concis</a>
+        <a href="/assets/Programme_RJNT_Détaillé_Censuré.pdf" download="Programme Détaillé RJNT 2024.pdf" class="download-button">Programme Détaillé</a>
+    </div>
+
+    <div class="footer">
+        <div class="sites">
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61556312734951" target="_blank" title="Facebook">
+              <i class="lab la-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/riodejanoether?igsh=MXV2eTdtY25tOG5mMQ%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+              <i class="lab la-instagram"></i>
+          </a>
+          <a href="https://apps.apple.com/us/app/rjnt/id6477356580" target="_blank" title="Application IOS">
+              <i class="lab la-apple"></i>
+          </a>
+          <a href="assets/RJNT.apk" download="RJNT" title="Application Android">
+            <i class="lab la-android"></i>
+        </a>
+      </div>
+        <p>© 2024 Rio de Ja'noether</p>
+      </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>

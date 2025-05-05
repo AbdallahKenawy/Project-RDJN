@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="appli.css">
+  <style>    
+    .notification {
+        width: 80%;
+        display: none;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+    }
+    
+    .notification.success {
+        background-color: #4CAF50; /* Green */
+    }
+    
+    .notification.warning {
+        background-color: orange; /* Orange */
+    }
+    
+    .notification.error {
+        background-color: #f44336; /* Red */
+    }
+  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+  <title>Calendrier</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.jpeg" alt="BdE INSA Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="appli.html">Calendrier</a></li>
+                    <li><a href="news.html">Articles</a></li>
+                    <li><a href="notifs.html">Notifications</a></li>
+                    <li><a href="amicalisme.html">Amicalisme</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-border"></div>
+    </header>
+
+<div class="form-container">
+    <form id="eventForm">
+        <label for="title">Titre de l’événement:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" placeholder="Informations brèves et essentielles pour l'événement (ex : lieu, etc.)"></textarea>
+
+        <label for="start">Début:</label>
+        <input type="datetime-local" id="start" name="start" required>
+
+        <label for="end">Fin:</label>
+        <input type="datetime-local" id="end" name="end" required>
+
+        <label for="pole">Pôle:</label>
+        <select id="pole" name="pole">
+            <option value="Accueil">Accueil</option>
+            <option value="A&I">A&I</option>
+            <option value="Alternance">Alternance</option>
+            <option value="AEI">AEI</option>
+            <option value="Bureau">Bureau</option>
+            <option value="Clubs">Clubs</option>
+            <option value="Communication">Communication</option>
+            <option value="Culture">Culture</option>
+            <option value="International">International</option>
+            <option value="Partenaires">Partenaires</option>
+            <option value="Prévention">Prévention</option>
+            <option value="Réseaux">Réseaux</option>
+            <option value="Soirée">Soirée</option>
+            <option value="STH">STH</option>
+        </select>
+
+        <label for="link">Lien (optionnel):</label>
+        <input type="url" id="link" name="link" placeholder="Billetterie seulement">
+
+        <button type="submit">Valider</button>
+
+        <div id="notification" class="notification"></div>
+    </form>
+</div>
+
+<script src="appli.js" type="module"></script>
+</body>
+</html>

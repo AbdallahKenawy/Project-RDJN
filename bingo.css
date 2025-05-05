@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'P22 Nudgewink Bold';
+    src: url('fonts/P22Nudgewink-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'P22 Nudgewink Regular';
+    src: url('fonts/p22nudgewinkpro-regular.ttf') format('opentype');
+    font-weight: normal; /* Adjusted to match the Regular style */
+    font-style: normal;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #fee5ef, #FF95BD);
+    color: black;
+    font-family: 'P22 Nudgewink Regular', sans-serif; /* Using Regular for the body */
+  }
+  
+  #join-section, #loading-screen, #admin-section {
+    text-align: center; /* Centering content */
+    padding: 20px;
+    color: #333; /* Dark text for better readability */
+  }
+
+  #admin-section{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    z-index: 2;
+  }
+  
+  input[type="text"], input[type="number"], button {
+    font-family: 'P22 Nudgewink Bold', sans-serif; /* Applying Bold font for inputs and buttons */
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners for inputs and buttons */
+    border: 2px solid #FF95BD; /* Pink border */
+    background-color: #fee5ef; /* Light pink background */
+    color: #333; /* Dark text */
+    text-align: center;
+  }
+  
+  button {
+    cursor: pointer; /* Hand cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+  
+  button:hover {
+    background-color: #FF95BD; /* Darker pink on hover */
+    color: white; /* White text on hover */
+  }
+  
+  #message {
+    font-style: italic;
+    color: plum; /* Using plum for message text */
+  }
+  
+  .loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover full viewport width */
+    height: 100vh; /* Cover full viewport height, adjust if necessary */
+    z-index: -1;
+    background-color: transparent; /* Optional based on desired appearance */
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 70vw; /* Adjusted width */
+    min-height: 30vw; /* Example minimum height, adjust based on your content */
+  }
+  
+  .image-container img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .image-color {
+    animation: revealColor 3s infinite;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  @keyframes revealColor {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  #homepage{
+    z-index: 2;
+  }
+  
+  /* Reusing the animation and gradient styles for titles or emphasized text */
+  h1, .button {
+    background: linear-gradient(
+      to right, 
+      plum, 
+      rgba(255, 105, 180, 0.8), 
+      plum
+    );
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1.5s linear infinite;
+  }
+  
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    h1, p {
+      font-size: smaller; /* Smaller font sizes on smaller screens */
+    }
+    #bingo-game {
+        width: 95vw; /* Take up more width on smaller screens */
+      }
+    
+      #bingo-header span {
+        font-size: 1.5em; /* Slightly smaller letters on small screens */
+      }
+  }
+
+  /* Extend existing styles with bingo game specifics */
+
+#bingo-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border:#fee5ef solid 1px;
+    border-radius: 10px;
+    padding: 5%;
+    height: 80vh;
+    width: 80vw; /* Adjust based on your layout needs */
+    max-height: 400px;
+    max-width: 600px; /* Ensure the board is not too wide on larger screens */
+    margin-top: 2vh;
+    z-index: 2; /* Ensure visibility above background elements */
+  }
+  
+  #bingo-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #bingo-header span {
+    font-family: 'P22 Nudgewink Bold', sans-serif;
+    font-size: 2em; /* Larger size for BINGO letters */
+    margin: 0 10px;
+    color: #FF95BD; /* Pink color for contrast */
+    animation: none; /* Override any existing text animation */
+  }
+  
+  #bingo-board {
+    border: 3px solid #FF95BD; /* Pink border around the entire board */
+    background-color: #fff; /* White background for readability */
+    padding: 10px;
+    height: 90%;
+    width: 90%;
+  }
+  
+  #bingo-board tr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+  }
+  
+  #bingo-board td {
+    flex: 1;
+    border: 1px solid #FF95BD;
+    margin: 4px;
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for interaction */
+  }
+  
+  #bingo-board td:hover {
+    background-color: #FF95BD; /* Pink background on hover */
+    color: #fff; /* White text for contrast */
+  }
+  
+  #bingo-board td.selected {
+    background-color: #FF4591; /* Darker pink for selected cells */
+    color: #fff; /* Ensure text is white for readability */
+  }
+
+  .barred {
+    color: #FF4591; /* A darker pink to indicate the "barred" state, matching the theme */
+    text-decoration: line-through; /* Adds a strike-through effect */
+    opacity: 0.7; /* Slightly reduce opacity to indicate it's been marked off */
+    animation: pulse 1s infinite alternate; /* Add a subtle pulse effect to draw attention */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    to {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
+  
+  
+  
+  

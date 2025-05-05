@@ -1,0 +1,659 @@
+
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "flex";
+    evt.currentTarget.className += " active";
+  }
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+const challenges = [
+  {
+    "Numéro": 1,
+    "Défis": "Se prendre en photos avec un mec lambda chauve ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 2,
+    "Défis": "Prendre en photos 5 bâtiments roses ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 3,
+    "Défis": "Dire \"je vote rose en portugais\" a un rose ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 4,
+    "Défis": "Epeler le nom de famille de Landy",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 5,
+    "Défis": "gagner au bras de fer contre neo",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 6,
+    "Défis": "Faire un paradise avec paradise ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 7,
+    "Défis": "Dire 10 surnoms de Liste",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 8,
+    "Défis": "Reposte une soirée rose",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 9,
+    "Défis": "Citer nos valeurs",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 10,
+    "Défis": "Aller à un repas rose",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 11,
+    "Défis": "Mettre le logo RJNT en fond d'écran",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 12,
+    "Défis": "Danser la choré à trois",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 13,
+    "Défis": "Dire son point préféré du programme et pourquoi ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 14,
+    "Défis": "Venir habillé en rose à un événement rose",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 15,
+    "Défis": "Suivre le compte des Roses sur Insta",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 16,
+    "Défis": "Faire un calin à la mascotte",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 17,
+    "Défis": "venir habillé en rose en cours",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 18,
+    "Défis": "Faire un coubeh déjà à Awa ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 19,
+    "Défis": "Faire la danse du quoicoubeh à Rohki",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 20,
+    "Défis": "Prendre une photo avec la mascotte",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 21,
+    "Défis": "Prendre une photos avec tous les alternants de la liste",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 22,
+    "Défis": "Faire une photo avec un partenaire ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 23,
+    "Défis": "Demander une signature du prez",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 24,
+    "Défis": "Faire une photo avec TIC et TAC",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 25,
+    "Défis": "Ramener du caramel à Caramel",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 26,
+    "Défis": "Faire rire dahak",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 27,
+    "Défis": "Deviner la spé de FIP GE",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 28,
+    "Défis": "Faire l'ane à bouriquet",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 29,
+    "Défis": "Trouver une musique que Nagui ne connait pas",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 30,
+    "Défis": "Faire une photo avec WD40 et du MEKANIK",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 31,
+    "Défis": "Demander l'heure à Flash",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 32,
+    "Défis": "Debugger 404",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 33,
+    "Défis": "Ramener un rapporteur à Englégu",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 34,
+    "Défis": "demander la question slay à animaslay",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 35,
+    "Défis": "Se prendre en photo vétu uniquement de goodies rose",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 36,
+    "Défis": "Mettre un Poce Bleu pour faire transformer Alice en Caramel",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 37,
+    "Défis": "Faire dire à Poulet dentsans que pizza renard c'est bon",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 38,
+    "Défis": "Demander son niveau à RoccoFuite",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 39,
+    "Défis": "Couche toi à la manière de Krist",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 40,
+    "Défis": "Trouve le vrai surnom de Blu",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 41,
+    "Défis": "Propose une idée de Soirée Soft à PDG",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 42,
+    "Défis": "Propose une bonne disquettes de loveur à LFDMV",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 43,
+    "Défis": "Apporte un doliprane à Chiantos",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 44,
+    "Défis": "Propose un moyen de transport originale à Chariot ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 45,
+    "Défis": "Crier Thomonstre dans le hall à la pause ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 46,
+    "Défis": "Crier Mecanik devant Mecanik ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 47,
+    "Défis": "Trouver la téléréalité préféré de Nagui",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 48,
+    "Défis": "Danse le Rock avec Aflaflou",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 49,
+    "Défis": "Trouver la série préféré honteuse de WD40",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 50,
+    "Défis": "Faire une photo avec un maillot du brésil",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 51,
+    "Défis": "Faire une photo devant le bar qui propose un shot RJNT",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 52,
+    "Défis": "Dire lesgarslesgarslesgars plus vite que Paradise ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 53,
+    "Défis": "Citer tous les membres du pôle AEI",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 54,
+    "Défis": "Avoir les deux ecocups ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 55,
+    "Défis": "Chanter la chanson du film RIO",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 56,
+    "Défis": "Venir au débat",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 57,
+    "Défis": "Souhaiter son anniversaire à un rose né pendant la campagne",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 58,
+    "Défis": "Faire une photo avec une Ecocup John'Ception et HypKnauth'Ik",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 59,
+    "Défis": "Citer un événement du Pôle Réseaux ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 60,
+    "Défis": "Installe l'application RJNT ",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 61,
+    "Défis": "Chanter Ma Liste avec Benoît",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 62,
+    "Défis": "Poster une Story avec la Mascotte",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 63,
+    "Défis": "Faire une photo avec le mec le plus petit de la liste",
+    "Difficulté": "Facile"
+   },
+   {
+    "Numéro": 64,
+    "Défis": "avoir reussi à prendre des photos avec tous les membres de la liste",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 65,
+    "Défis": "simuler une chute devant tout le monde",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 65,
+    "Défis": "Proposer une BN à Dino avec un écocup Franklinosaur",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 66,
+    "Défis": "Offre un marcel à Marceau",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 67,
+    "Défis": "Mettre du vernis rose",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 68,
+    "Défis": "Boire une boisson rose",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 69,
+    "Défis": "Expliquer le surnom de 5 personnes de la liste",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 70,
+    "Défis": "Coller un stickers dans un endroit impropable (l'insa ça compte pas)",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 71,
+    "Défis": "Se peindre le visage en rose",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 72,
+    "Défis": "Faire un selfie avec 2 anciens roses",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 73,
+    "Défis": "Dessiner le logo sur un tableau",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 74,
+    "Défis": "Danser la chorée avec la mascotte",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 75,
+    "Défis": "Faire une photo devant 3 colocs de la liste",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 76,
+    "Défis": "Faire danser la chorée à un vert",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 77,
+    "Défis": "Convaincre un inconnu de voter rose",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 78,
+    "Défis": "Faire une photo avec Laure",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 79,
+    "Défis": "Avoir tous les goodies",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 80,
+    "Défis": "Venir en cours avec le logo sur le front",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 81,
+    "Défis": "Chanter le générique des ratz à rapido et razmo",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 82,
+    "Défis": "Reciter la réplique exacte à amblance",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 83,
+    "Défis": "Offrir du chocolat eco plus à Lindt",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 84,
+    "Défis": "Battre Swinger à la BN",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 85,
+    "Défis": "Manger une croquette devant scoobabou",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 86,
+    "Défis": "Ramener une tartine de Margarine à Margarine",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 87,
+    "Défis": "Faire une photo avec un pilon de poulet et Poulet Dentsans",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 88,
+    "Défis": "Réciter la liste des vainqueur BDE depuis 2015 à QLG (ps: oublie pas les derniers)",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 89,
+    "Défis": "Avec des amis réalise un porté de cheers devant Trognon",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 90,
+    "Défis": "Trouve la vidéo d'origine de Com SAH",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 91,
+    "Défis": "Propose une idée de Soirée à Tupac",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 92,
+    "Défis": "Aller donner son sang",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 93,
+    "Défis": "Ramasser une bouteille de megots",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 94,
+    "Défis": "Faire une gourde neuve avec notre gourde",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 95,
+    "Défis": "Fais une story\/un post avec ton rose préféré en nous mentionnant ",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 96,
+    "Défis": "Crier thomonstre en amphi",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 97,
+    "Défis": "Citer les 4 listes roses ",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 98,
+    "Défis": "Se faire un tatouage ephémère sur le thème du Carnaval",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 99,
+    "Défis": "Convaincre un prof de dire voter Rose ",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 100,
+    "Défis": "Ramène ton masque à une Soirée Hard",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 101,
+    "Défis": "Trouver le poids total de la liste",
+    "Difficulté": "Intermédiaire"
+   },
+   {
+    "Numéro": 102,
+    "Défis": "La coupe à R9",
+    "Difficulté": "Mythique"
+   },
+   {
+    "Numéro": 103,
+    "Défis": "Faire une photo avec tous les arrets de tram ",
+    "Difficulté": "Mythique"
+   },
+   {
+    "Numéro": 104,
+    "Défis": "Se teindre les cheveux en Roses",
+    "Difficulté": "Mythique"
+   },
+   {
+    "Numéro": 105,
+    "Défis": "Fabriquer une Char Carvalesque ( Minimum : 1m sur 0,6m qui roule)",
+    "Difficulté": "Mythique"
+   },
+   {
+    "Numéro": 106,
+    "Défis": "Faire un aftermovie de ta soiree à Marcel Marceau",
+    "Difficulté": "Difficile"
+   },
+   {
+    "Numéro": 107,
+    "Défis": "Faire un after movie de ton barathon",
+    "Difficulté": "Difficile"
+   },
+   {
+    "Numéro": 108,
+    "Défis": "Avoir 20 objets roses",
+    "Difficulté": "Difficile"
+   },
+   {
+    "Numéro": 109,
+    "Défis": "Demander à un vert de dire \"votez Rose\"",
+    "Difficulté": "Difficile"
+   },
+   {
+    "Numéro": 110,
+    "Défis": "Avoir une coupe de cheveux RJNT",
+    "Difficulté": "Difficile"
+   },
+   {
+    "Numéro": 111,
+    "Défis": "Marquer Voter Rose en note Instagram",
+    "Difficulté": "Difficile"
+   },
+   {
+    "Numéro": 112,
+    "Défis": "Danser la Chorée des Far West'ein avec Blu",
+    "Difficulté": "Difficile"
+   },
+   {
+    "Numéro": 113,
+    "Défis": "Danser la Chorée des Eins'tahiti avec Chiantos ",
+    "Difficulté": "Difficile"
+   },
+   {
+    "Numéro": 114,
+    "Défis": "Remporter le Fil Rose ",
+    "Difficulté": "Difficile"
+   },
+   {
+    "Numéro": 115,
+    "Défis": "Le temps des Roses au Rally Balle Neuve",
+    "Difficulté": "Difficile"
+   }
+];
+
+function distributeChallenges(challenges) {
+  const pointsMapping = { "Facile": "25 pts", "Intermédiaire": "50 pts", "Difficile": "100 pts", "Mythique": "300 pts" };
+
+  challenges.forEach(challenge => {
+    const points = pointsMapping[challenge["Difficulté"]];
+    const listItems = document.querySelectorAll('.collapsible');
+    
+    for (let i = 0; i < listItems.length; i++) {
+      if (listItems[i].textContent === points) {
+        let contentDiv = listItems[i].nextElementSibling;
+        if (!contentDiv.querySelector('ul')) {
+          let ul = document.createElement('ul');
+          contentDiv.appendChild(ul);
+        }
+        let ul = contentDiv.querySelector('ul');
+        let li = document.createElement('li');
+        li.textContent = challenge["Défis"];
+        ul.appendChild(li);
+        break;
+      }
+    }
+  });
+}
+
+distributeChallenges(challenges);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.chansonheader').forEach(header => {
+      var content = header.nextElementSibling;
+      content.style.display = "none"; // Ensure it starts collapsed
+  
+      header.addEventListener('click', function() {
+        // Toggle content visibility
+        if (content.style.display === "none" || content.style.display === "") {
+          content.style.display = "block";
+          header.classList.add("open"); // Add 'open' class to rotate arrow
+        } else {
+          content.style.display = "none";
+          header.classList.remove("open"); // Remove 'open' class
+        }
+      });
+    });
+  });
+  
+  
+  

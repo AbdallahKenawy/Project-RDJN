@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="news.css">
+    <style>    
+        .notification {
+            width: 80%;
+            display: none;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+        }
+        
+        .notification.success {
+            background-color: #4CAF50; /* Green */
+        }
+        
+        .notification.warning {
+            background-color: orange; /* Orange */
+        }
+        
+        .notification.error {
+            background-color: #f44336; /* Red */
+        }
+      </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.jpeg" alt="BdE INSA Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="appli.html">Calendrier</a></li>
+                    <li><a href="news.html">Articles</a></li>
+                    <li><a href="notifs.html">Notifications</a></li>
+                    <li><a href="amicalisme.html">Amicalisme</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-border"></div>
+    </header>
+    <div class="form-container">
+        <form id="documentForm">
+            <label for="title">Titre:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required placeholder="Vous pouvez insérer des liens - Pour aller à la ligne, utilisez \n. Ex : Lieu : Paris \nDate : 12 août 2024"></textarea>
+            
+            <div id="colorss">
+                <label>Couleur</label>
+                <div id="colorPicker"></div>
+                <input type="hidden" id="r" name="r">
+                <input type="hidden" id="g" name="g">
+                <input type="hidden" id="b" name="b">
+                <input type="hidden" id="o" name="o">
+            </div>
+
+            <label for="imageFile">Image (Utilisez des PNG sans arrière-plan pour une qualité optimale) :</label>
+            <input type="file" id="imageFile" name="imageFile" required>
+
+            <button type="submit">Valider</button>
+
+            <div id="notification" class="notification"></div>
+        </form>
+    </div>
+    <script src="news.js" type="module"></script>
+</body>
+</html>
